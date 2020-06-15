@@ -1,16 +1,9 @@
-/*@import 'https://fonts.googleapis.com/css?family=Montserrat';*/
-
-
+/* Only for demo purposes. */
 body {
-  background-color: #fff;
-  color: #0d0d0d;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif
+	font-family: "Fira Sans", sans-serif;
+	/*margin: 85px 0;*/
 }
 
-.hero-unit {
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
 
 .page-head {
   padding: 60px 0;
@@ -25,9 +18,6 @@ body {
   margin-top: 0;
 }
 
-h1 {
-  text-transform: uppercase;
-}
 
 h3 {
   font-size: 16px;
@@ -53,21 +43,24 @@ h3 {
   transition: color 0.1s ease 0s, background-color 0.15s ease 0s;
 }
 
-.thumbnail {
-  border: 1px solid #000;
+
+
+.thumb {
+	margin-bottom: 15px;
+  
+}
+.thumb:last-child {
+	margin-bottom: 0;
+}
+
+.thumb 
+figure img {
+  -webkit-transition: .1s ease-in-out;
+  transition: .2s ease-in-out;
   border-radius: 0px;
 }
-
-.thumbnail:hover {
-	/*background-color: #000;*/
-	border: 2px solid #000;
-	color: #fff;
-	border-color: #000;
-	border-radius: 0px;
-	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5), 0 10px 40px rgba(0, 0, 0, 0.2);
+.thumb 
+figure:hover img {
+  border-radius: 0px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 10px 40px rgba(0, 0, 0, 0.1);
 }
-
-/*.thumbnail:hover > img {
-  -webkit-transform: scale3d(1.1, 1.1, 1.1);
-  transform: scale3d(1.1, 1.1, 1.1);
-}*/
