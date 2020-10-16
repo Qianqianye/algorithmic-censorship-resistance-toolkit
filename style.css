@@ -1,8 +1,44 @@
 body {
     font-family: "Fira Sans", sans-serif;
     background: #BBF0A8;
-    /*margin: 85px 0;*/
+    -webkit-font-smoothing: antialiased;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(155, 206, 238, 1)), color-stop(30%, rgba(255, 245, 204, 1)), color-stop(70%, rgba(145, 255, 141, 1)), to(rgba(185, 141, 255, 1)));
+    background: -webkit-linear-gradient(left, rgba(168, 237, 234, 1) 0%, rgba(255, 245, 204, 1) 30%, rgba(145, 255, 141, 1) 70%, rgba(185, 141, 255, 1) 100%);
+    background: -o-linear-gradient(left, rgba(168, 237, 234, 1) 0%, rgba(255, 245, 204, 1) 30%, rgba(145, 255, 141, 1) 70%, rgba(185, 141, 255, 1) 100%);
+    background: linear-gradient(90deg, rgba(168, 237, 234, 1) 0%, rgba(221, 214, 243, 1) 30%, rgba(255, 245, 204, 1) 70%, rgba(252, 189, 255, 1) 100%);
+    background-size: 400% 400%;
+    -webkit-animation: gsradient 20s ease infinite;
+    animation: gradient 20s ease infinite;
 }
+
+@-webkit-keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 
 @font-face {
     font-family: AdieuRegular;
